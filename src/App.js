@@ -1,24 +1,22 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import NavBar from './Components/NavBar';
+import SearchInput from './Components/SearchInput';
 
 function App() {
+  const [theme, setTheme] = useState("darkTheme");
+  const [isDarkTheme, setIsDarkTheme] = useState(document.body.classList.contains(theme))
+  const changeTheme = () => {
+    document.body.classList.toggle(theme);
+    setIsDarkTheme(document.body.classList.contains(theme));
+    console.log(isDarkTheme);
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      // <React.Fragment>
+      //   <NavBar changeTheme={changeTheme} isDarkTheme={isDarkTheme}/>
+      // </React.Fragment>
+    <SearchInput />
+    
   );
 }
 
