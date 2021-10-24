@@ -25,7 +25,7 @@ body.darkTheme .themeSvg {
 .navbar {
   position: fixed;
   top: 0;
-  padding: 0px 15px;
+  padding: 0px 17px;
   background-color: transparent;
   width: 100vw;
   text-align: center;
@@ -41,7 +41,7 @@ body.darkTheme .navbar {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin: auto auto
+  margin: auto auto;
 }
 .themeButton {
   background-color: transparent;
@@ -74,4 +74,98 @@ body.darkTheme .themeButton {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 10px;
+  height: 40px;
+  margin-bottom: 25px;
+  /* margin-left: 10px; */
+  max-width: 100%;
+  overflow: hidden;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 14px rgba(59, 7, 7, 0.15);
+}
+@media screen and (min-width: 768px) {
+  .searchInputGroup {
+    width: 500px;
+    max-width: 500px; 
+  }
+}
+body.darkTheme .searchInputGroup{
+  background-color: #2b3743;
+}
+.searchIcon {
+  width: 13px;
+  height: 13px;
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+  margin-top: 2px;
+  stroke-width: 4px;
+  margin-right: 5px;
+}
+body.darkTheme .searchIcon {
+  fill: white;
+  stroke: white;
+}
+.searchBtn {
+  background-color: transparent;
+  border: 0;
+}
+.searchInput {
+  border: 0;
+  width: 100%;
+  font-size: 12px;
+  background-color: transparent;
+  color: #b3b3b3;
+}
+.searchInput:focus {
+  outline: 0;
+}
+.searchInput::placeholder {
+  color: #b3b3b3;
+  font-weight: 400;
+}
+body.darkTheme .searchInput::placeholder {
+  color: white;
+}
+body.darkTheme .searchInput {
+  color: white;
+}
+
+/* Filter Select  */
+.filter {
+  padding: 13px;
+  margin-top: 10PX;;
+  border-radius: 6px;
+  border: 0;
+  width: 142px;
+  height: 43px;
+  box-shadow: 0px 0px 14px rgba(59, 7, 7, 0.15);
+}
+body.darkTheme .filter {
+  background-color: #2b3743;
+  color: white;
+}
+.filter:focus {
+  outline: 0;
+}
+option {
+  margin: 10px 0;
+}
+/* Styles for the control section */
+.controlSection {
+  display: flex;
+  flex-direction: column;
+  margin: auto auto;
+  margin-top: 70px;
+}
+.controlSectionContainer {
+  padding: 0px 17px;
+
+}
+
+@media screen and (min-width: 768px) {
+  .controlSection {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
