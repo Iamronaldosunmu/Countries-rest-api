@@ -26,14 +26,15 @@ body.darkTheme .themeSvg {
   position: fixed;
   top: 0;
   padding: 0px 17px;
-  background-color: transparent;
+  background-color: white;
   width: 100vw;
   text-align: center;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
-  transition: color 0.35s;
+  transition: color 0.35s, background-color 0.35s;
 }
 body.darkTheme .navbar {
   color: white;
+  background-color: #202d36;
 }
 .navbarContainer {
   display: flex;
@@ -123,6 +124,7 @@ body.darkTheme .searchIcon {
 .searchInput::placeholder {
   color: #b3b3b3;
   font-weight: 400;
+  transition: color 0.35s;
 }
 body.darkTheme .searchInput::placeholder {
   color: white;
@@ -139,6 +141,7 @@ body.darkTheme .searchInput {
   border: 0;
   width: 142px;
   height: 43px;
+  transition: color 0.35s, background-color 0.35s;
   box-shadow: 0px 0px 14px rgba(59, 7, 7, 0.15);
 }
 body.darkTheme .filter {
@@ -169,3 +172,77 @@ option {
     justify-content: space-between;
   }
 }
+
+/* Styles for the country component */
+.countryContainer {
+  width: 200px;
+  overflow: hidden;
+  margin: auto auto;
+  margin-top: 50px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.35s;
+}
+body.darkTheme .countryContainer {
+  background-color:#2b3743;
+}
+
+.countryFlag {
+  width: 100%;
+  height: 125px;
+  overflow: hidden;
+}
+.countryFlag img {
+  width: 100%;
+  object-fit: cover;
+}
+.countryInformation {
+  padding: 15px 20px;
+}
+h2.countryName {
+  margin: 0;
+  margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+body.darkTheme .countryInformation  {
+  color: white;
+  transition: color 0.35s;
+}
+.countryInformation .infoValue {
+  color: #a6afb7;
+}
+.countryInformation p {
+  margin: 0 0 8px;
+}
+
+/* Styles for the Countries Container grid*/
+.countriesContainer {
+  padding: 0 17px;
+}
+.grid {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  justify-content: space-between;
+}
+@media screen and (min-width: 450px) and (max-width: 650px) {
+  .grid-1x2 {
+  grid-template-columns: 200px 200px;
+  }
+}
+@media screen and (min-width: 650px) and (max-width: 850px) {
+  .grid-1x3 {
+  grid-template-columns: 200px 200px 200px;
+  }
+}
+@media screen and (min-width: 850px) {
+  .grid-1x4 {
+  grid-template-columns: 200px 200px 200px 200px;
+  }
+}
+
+/* TODO: Make sure the countries container is properly aligned with the other containers */

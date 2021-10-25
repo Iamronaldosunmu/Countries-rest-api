@@ -4,12 +4,13 @@ import FilterSelect from './FilterSelect';
 
 function ControlSection(props) {
     return (
-        <div class="controlSectionContainer">
+        <section class="controlSectionContainer">
             <div className="controlSection container">
-                <SearchInput />
-                <FilterSelect />
+                <SearchInput inputValue={props.inputValue} onInputChange={props.onInputChange} onSubmit={props.onSubmit}/>
+                <FilterSelect onFilterChange={props.onFilterChange}/>
             </div>
-        </div>
+            
+        </section>
     );
 }
 export default ControlSection;
