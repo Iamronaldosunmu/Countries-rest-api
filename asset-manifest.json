@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Countries-rest-api/static/css/main.b83c68f9.chunk.css",
+    "main.js": "/Countries-rest-api/static/js/main.e3309c20.chunk.js",
+    "main.js.map": "/Countries-rest-api/static/js/main.e3309c20.chunk.js.map",
+    "runtime-main.js": "/Countries-rest-api/static/js/runtime-main.5a509b11.js",
+    "runtime-main.js.map": "/Countries-rest-api/static/js/runtime-main.5a509b11.js.map",
+    "static/js/2.389c4007.chunk.js": "/Countries-rest-api/static/js/2.389c4007.chunk.js",
+    "static/js/2.389c4007.chunk.js.map": "/Countries-rest-api/static/js/2.389c4007.chunk.js.map",
+    "static/js/3.63eac65a.chunk.js": "/Countries-rest-api/static/js/3.63eac65a.chunk.js",
+    "static/js/3.63eac65a.chunk.js.map": "/Countries-rest-api/static/js/3.63eac65a.chunk.js.map",
+    "index.html": "/Countries-rest-api/index.html",
+    "static/css/main.b83c68f9.chunk.css.map": "/Countries-rest-api/static/css/main.b83c68f9.chunk.css.map",
+    "static/js/2.389c4007.chunk.js.LICENSE.txt": "/Countries-rest-api/static/js/2.389c4007.chunk.js.LICENSE.txt",
+    "static/media/backIcon.1e65cf89.svg": "/Countries-rest-api/static/media/backIcon.1e65cf89.svg",
+    "static/media/dark-mode-6682.48951953.svg": "/Countries-rest-api/static/media/dark-mode-6682.48951953.svg",
+    "static/media/moon-6687.6577b034.svg": "/Countries-rest-api/static/media/moon-6687.6577b034.svg",
+    "static/media/searchIcon.ddfd6c82.svg": "/Countries-rest-api/static/media/searchIcon.ddfd6c82.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5a509b11.js",
+    "static/js/2.389c4007.chunk.js",
+    "static/css/main.b83c68f9.chunk.css",
+    "static/js/main.e3309c20.chunk.js"
+  ]
+}
