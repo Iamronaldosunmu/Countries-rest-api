@@ -1,3 +1,12 @@
+## The project
+Over the course of the past few weeks, I've been learning backend development with Node, Express, and MongoDB.
+It suddenly occured to me that I do not have any React-only projects on my github yet.
+So, decided to take a berak from learning to build one of the advanced challenges on frontendmentor.io with React.
+Here it is!
+I implemented many features like searching, filtering, routing and navigation, conditional rendering, etc. 
+I'm really happy with how the prject turned out, tell me what you think.
+Live Site Url: 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
