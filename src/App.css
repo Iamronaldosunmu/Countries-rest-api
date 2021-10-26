@@ -58,7 +58,7 @@ body.darkTheme .themeButton {
 }
 .themeButtonText {
   display: inline-block;
-  margin-top: 1px
+  margin-top: 1px;
 }
 .navbarTitle {
   font-weight: 600;
@@ -88,10 +88,10 @@ body.darkTheme .themeButton {
 @media screen and (min-width: 768px) {
   .searchInputGroup {
     width: 500px;
-    max-width: 500px; 
+    max-width: 500px;
   }
 }
-body.darkTheme .searchInputGroup{
+body.darkTheme .searchInputGroup {
   background-color: #2b3743;
 }
 .searchIcon {
@@ -110,6 +110,9 @@ body.darkTheme .searchIcon {
 .searchBtn {
   background-color: transparent;
   border: 0;
+}
+.searchBtn:focus {
+  outline: 0;
 }
 .searchInput {
   border: 0;
@@ -136,7 +139,7 @@ body.darkTheme .searchInput {
 /* Filter Select  */
 .filter {
   padding: 13px;
-  margin-top: 10PX;;
+  margin-top: 10px;
   border-radius: 6px;
   border: 0;
   width: 142px;
@@ -163,7 +166,6 @@ option {
 }
 .controlSectionContainer {
   padding: 0px 17px;
-
 }
 
 @media screen and (min-width: 768px) {
@@ -186,7 +188,7 @@ option {
   animation: show 0.5s ease-in;
 }
 body.darkTheme .countryContainer {
-  background-color:#2b3743;
+  background-color: #2b3743;
 }
 
 .countryFlag {
@@ -208,7 +210,7 @@ h2.countryName {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-body.darkTheme .countryInformation  {
+body.darkTheme .countryInformation {
   color: white;
   transition: color 0.35s;
 }
@@ -232,17 +234,17 @@ body.darkTheme .countryInformation  {
 }
 @media screen and (min-width: 450px) and (max-width: 650px) {
   .grid-1x2 {
-  grid-template-columns: 200px 200px;
+    grid-template-columns: 200px 200px;
   }
 }
 @media screen and (min-width: 650px) and (max-width: 850px) {
   .grid-1x3 {
-  grid-template-columns: 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px;
   }
 }
 @media screen and (min-width: 850px) {
   .grid-1x4 {
-  grid-template-columns: 200px 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px 200px;
   }
 }
 /* Styles for the country details page */
@@ -256,12 +258,12 @@ body.darkTheme .countryDetailsPage {
   color: white;
 }
 .backIcon {
-  width: 18px; 
+  width: 18px;
   margin-left: 10px;
   fill: black;
   transition: fill 0.35s;
 }
-body.darkTheme .backIcon path{
+body.darkTheme .backIcon path {
   fill: white;
 }
 .backButton {
@@ -274,7 +276,7 @@ body.darkTheme .backIcon path{
   transition: background-color 0.35s;
 }
 .backButtonText {
-  margin: 5px 0 ;
+  margin: 5px 0;
   margin-left: 10px;
   margin-right: 12px;
   font-size: 15px;
@@ -288,7 +290,7 @@ body.darkTheme .backButtonText {
   overflow: hidden;
   margin-bottom: 15px;
 }
-.flagImageContainer img{
+.flagImageContainer img {
   width: 100%;
   height: 200px;
   object-fit: cover;
@@ -317,7 +319,7 @@ body.darkTheme .backButtonText {
   .flagImageContainer img {
     height: auto;
   }
-} 
+}
 .details {
   font-size: 13px;
   font-weight: 600;
@@ -367,11 +369,28 @@ body.darkTheme .backButton {
     padding: 5px 5px;
   }
 }
+.noresults {
+  color: black;
+  transition: color 0.35s;
+  animation: noresultsanimation 4s;
+}
+body.darkTheme .noresults {
+  color: white;
+}
 /* Animations */
 @keyframes show {
   0% {
     opacity: 0;
-  };
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes noresultsanimation {
+  0%,
+  60% {
+    opacity: 0;
+  }
   100% {
     opacity: 1;
   }

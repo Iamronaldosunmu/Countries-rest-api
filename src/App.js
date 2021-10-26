@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Route, Switch } from 'react-router';
+import { Redirect, Route, Switch } from 'react-router';
 import './App.css';
 import AppBody from './AppBody';
 import CountryDetailsPage from './Components/CountryDetailsPage';
@@ -22,8 +22,9 @@ function App() {
       <React.Fragment>
         <NavBar changeTheme={changeTheme} isDarkTheme={isDarkTheme}/>
         <Switch>
-          <Route path='/:name' render={props => <CountryDetailsPage {...props} />} />
+          <Route path='/:name' exact render={props => <CountryDetailsPage {...props} />} />
           <Route path='/' exact render={props => <AppBody getCountryData={getCountryData} {...props} />} />
+          <Redirect to="/" />
         </Switch>
       </React.Fragment>
   );

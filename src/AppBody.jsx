@@ -14,8 +14,16 @@ function AppBody(props){
           setCountryData(data);
           props.getCountryData(data);
         }
-        getCountryData();
-      });
+        try{
+            getCountryData();
+        }
+        catch(ex) {
+            alert("Make sure you have a strong internet connection");
+        }
+        return () => {
+            setCountryData([]);
+        }
+      }, []);
     const handleAllFilters = (data) => {
         const filteredByRegion = selectedRegion ? filterByRegion(data, selectedRegion) : data;
         const filteredByInputSearch = filterByInputSearch(filteredByRegion, inputValue);

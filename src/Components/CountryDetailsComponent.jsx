@@ -16,22 +16,22 @@ function CountryDetailsComponent({flag, name, nativeName, population, region, su
                 <h2>{name}</h2>
                 <div className="countryInfoTextContainer">
                     <div className="countryInfoTextContainer1">
-                        <p class="details">Native Name: <span className="detailValue">{nativeName || 'none'}</span></p>
-                        <p class="details">Population: <span className="detailValue">{population || 'none'}</span></p>
-                        <p class="details">Region: <span className="detailValue">{region || 'none'}</span></p>
-                        <p class="details">Sub Region: <span className="detailValue">{subregion || 'none'}</span></p>
-                        <p class="details">Capital: <span className="detailValue">{capital || 'none'}</span></p>
+                        <p className="details">Native Name: <span className="detailValue">{nativeName || 'none'}</span></p>
+                        <p className="details">Population: <span className="detailValue">{population || 'none'}</span></p>
+                        <p className="details">Region: <span className="detailValue">{region || 'none'}</span></p>
+                        <p className="details">Sub Region: <span className="detailValue">{subregion || 'none'}</span></p>
+                        <p className="details">Capital: <span className="detailValue">{capital || 'none'}</span></p>
                     </div>
                     <div className="countryInfoTextContainer2">
-                        <p class="details">Top Level Domain <span className="detailValue">{topLevelDomain[0]}</span></p>
-                        <p class="details">Currencies: <span className="detailValue">{currencies && currencies[0].name}</span></p>
-                        <p class="details">Languages: <span className="detailValue">{languages && getLanguages(languages)}</span></p>
+                        <p className="details">Top Level Domain <span className="detailValue">{topLevelDomain[0]}</span></p>
+                        <p className="details">Currencies: <span className="detailValue">{currencies && currencies[0].name}</span></p>
+                        <p className="details">Languages: <span className="detailValue">{languages && getLanguages(languages)}</span></p>
                     </div>
                         </div>
-                    <div class="borderCountriesContainer">
+                    <div className="borderCountriesContainer">
                         <h4>Border Countries:</h4>
                         <div className="borderItems">
-                            {borders && borders.map(border => <div onClick={() => history.push(`/${border}`)} >{border}</div>)}
+                            {Array.isArray(borders) && borders.map(border => <div key={borders.indexOf(border)} onClick={() => history.push(`/${border}`)} >{border}</div>)}
                             {/* <div>France</div>
                             <div>Germany</div>
                             <div>Netherlands</div> */}
