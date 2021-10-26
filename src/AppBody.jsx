@@ -4,7 +4,7 @@ import CountriesContainer from './Components/CountriesContainer';
 import axios from 'axios';
 
 
-function AppBody(){
+function AppBody(props){
     const [countryData, setCountryData] = useState([]);
     const [selectedRegion, setselectedRegion] = useState('');
     const [inputValue, setinputValue] = useState('');
@@ -12,6 +12,7 @@ function AppBody(){
         async function getCountryData () {
           const {data} = await axios.get('https://restcountries.com/v2/all');
           setCountryData(data);
+          props.getCountryData(data);
         }
         getCountryData();
       }, []);
@@ -39,7 +40,7 @@ function AppBody(){
     return (
         <React.Fragment>
         <ControlSection inputValue={inputValue} onInputChange={onInputChange} onSubmit={onSubmit} onFilterChange={onFilterChange}/>
-        <CountriesContainer countryData={handleAllFilters(countryData)}/>
+        <CountriesContainer countryData={handleAllFilters(countryData)} history={props.history} />
       </React.Fragment>
     );
 }
