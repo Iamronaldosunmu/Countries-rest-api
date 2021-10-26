@@ -10,7 +10,7 @@ function NavBar({changeTheme, isDarkTheme}) {
                 <p className="navbarTitle">Where in the world?</p>
                 <button className="themeButton" onClick={changeTheme}>
                     {isDarkTheme ? <DarkThemeSvg/> : <LightThemeSvg/>}
-                    <span class="themeButtonText">Dark Mode</span>
+                    <span className="themeButtonText">Dark Mode</span>
                     
                 </button>
             </div>

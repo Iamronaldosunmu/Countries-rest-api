@@ -1,6 +1,4 @@
-import axios from 'axios';
-import React, {useEffect, useState} from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 
 function CountryDetailsComponent({flag, name, nativeName, population, region, subregion, capital, topLevelDomain, currencies, languages, borders, history}) {
     console.log(borders);
@@ -12,7 +10,7 @@ function CountryDetailsComponent({flag, name, nativeName, population, region, su
     return (
         <div className="countryDetailsComponent">
             <div className="flagImageContainer">
-                <img src={flag} />
+                <img src={flag} alt=""/>
             </div>
             <div className="extraCountryInfo">
                 <h2>{name}</h2>

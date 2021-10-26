@@ -15,7 +15,7 @@ function AppBody(props){
           props.getCountryData(data);
         }
         getCountryData();
-      }, []);
+      });
     const handleAllFilters = (data) => {
         const filteredByRegion = selectedRegion ? filterByRegion(data, selectedRegion) : data;
         const filteredByInputSearch = filterByInputSearch(filteredByRegion, inputValue);

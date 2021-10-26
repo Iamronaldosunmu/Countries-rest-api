@@ -2,8 +2,8 @@ import React from 'react'
 
 function FilterSelect (props) {
     return (
-        <select className="filter" onChange={props.onFilterChange}>
-            <option value="" disabled selected hidden>Filter by Region</option>
+        <select className="filter" onChange={props.onFilterChange} defaultValue="">
+            <option value="" disabled hidden>Filter by Region</option>
             <option value="" >All</option>
             <option value="Africa">Africa</option>
             <option value="Americas">Americas</option>

@@ -1,11 +1,11 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import Country from './Country';
 
 function CountriesContainer({countryData, history}) {
     
     const firstTwelveCountries = countryData.slice(0, 12);
     return (
-        <section class="countriesContainer">
+        <section className="countriesContainer">
             <div className="container grid grid-1x2 grid-1x3 grid-1x4">
                 {
                     firstTwelveCountries.map(country => <Country flagUrl={country.flags.png} name={country.name} population={country.population} region={country.region} capital={country.capital} key={firstTwelveCountries.indexOf(country)} history={history}/> )

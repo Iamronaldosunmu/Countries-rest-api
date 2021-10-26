@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import { Route, Switch } from 'react-router';
 import './App.css';
 import AppBody from './AppBody';

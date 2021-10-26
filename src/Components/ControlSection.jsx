@@ -4,7 +4,7 @@ import FilterSelect from './FilterSelect';
 
 function ControlSection(props) {
     return (
-        <section class="controlSectionContainer">
+        <section className="controlSectionContainer">
             <div className="controlSection container">
                 <SearchInput inputValue={props.inputValue} onInputChange={props.onInputChange} onSubmit={props.onSubmit}/>
                 <FilterSelect onFilterChange={props.onFilterChange}/>

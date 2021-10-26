@@ -4,7 +4,7 @@ function Country ({flagUrl, name, population, region, capital, history}) {
     return (
         <div className="countryContainer" onClick={() => history.push(`${name}`)}>
             <section className="countryFlag">
-                <img src={flagUrl} />
+                <img src={flagUrl} alt="" />
             </section>
             <section className="countryInformation">
                 <h2 className="countryName">{name}</h2>
